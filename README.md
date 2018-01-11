@@ -3,5 +3,5 @@
 ### Usage
 
 ```bash
-python3 %FolderName%
+python3 %YourLang%/%ExampleName%
 ```
