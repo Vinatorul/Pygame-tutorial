@@ -5,10 +5,10 @@ import pygame, os
 
 class Sprite:
     # загружаем с диска изображение
-    __image = pygame.image.load(os.path.normpath("sprites1.png"))
+    __image = pygame.image.load(os.path.join(os.path.dirname(__file__),os.path.normpath("../Assets/sprites.png")))
 
     # сохраняем всю необходимую информацию
-    def __init__(self, x, y, t_x, t_y, w, h, fc):
+    def __init__(self, x, y, t_x, t_y, w, h):
         # положение спрайта в окне
         self.x = x
         self.y = y
@@ -20,7 +20,7 @@ class Sprite:
         self.h = h
         # фреймы анимации
         self.frame_ind = 0
-        self.frame_count = fc
+        self.frame_count = 2
         # таймер на 100 милисекунд
         self.frame_timer = 100
 

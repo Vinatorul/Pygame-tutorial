@@ -3,5 +3,5 @@
 ### Usage
 
 ```bash
-python3 %YourLang%/%ExampleName%
+python3 %ExampleName%/%YourLang%
 ```
