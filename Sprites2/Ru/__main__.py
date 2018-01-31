@@ -86,7 +86,6 @@ def main():
         # Обновляем положение тайлов, если тайл полностью зашел за левую границу экрана,
         # то перемещаем его в конец списка
         for tile in tiles:
-            tile.vx -= delta/1000
             tile.update(delta)
             if tile.x < -TILE_SIZE:
                tile.x += tiles_count*TILE_SIZE
